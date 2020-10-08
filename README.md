@@ -43,7 +43,7 @@ Things you may want to cover:
 - has_many :item_transactions
 
 ## addresses table
-|Column	Type	Options|
+|Column|Type|Options|
 |------|----|-------|
 |postal_code|string|null: false|
 |prefecture|integer|null: false|
@@ -57,7 +57,7 @@ Things you may want to cover:
 - belongs_to :item_transaction
 
 ## items table
-|Column	Type	Options|
+|Column|Type|Options|
 |------|----|-------|
 |id(PK)|デフォルト|null: false|
 |name|string|null: false|
@@ -75,7 +75,7 @@ Things you may want to cover:
 - has_one :item_transaction
 
 ## item_transactions table
-|Column	Type	Options|
+|Column|Type|Options|
 |------|----|-------|
 |item_id(FK)|integer|foreign_key: true|
 |user_id(FK)|integer|foreign_key: true|
