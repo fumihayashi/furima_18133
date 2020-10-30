@@ -37,6 +37,12 @@ class ItemsController < ApplicationController
     render 'edit'
   end
 
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy if current_user.id == @item.user.id
+    redirect_to root_path
+  end
+
   def item_params
     params.require(:item).permit(
       :image,
